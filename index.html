@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Urban Spice Restaurant - Premium fine dining offering culinary artistry in a luxury black, gold, and white setting. Reserve your table online.">
+    <title>Urban Spice | Premium Luxury Fine Dining Restaurant</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header / Sticky Navigation -->
+    <header class="header" id="header">
+        <div class="container navbar">
+            <a href="#home" class="logo">
+                URBAN <span>SPICE</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#menu" class="nav-link">Our Menu</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#testimonials" class="nav-link">Reviews</a>
+                <a href="#reservation" class="nav-link">Reservation</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="burger-menu" id="burger-menu">
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider-bg">
+            <div class="hero-bg-item"></div>
+        </div>
+        <div class="hero-content">
+            <span class="hero-subtitle">A Symphony of Flavors</span>
+            <h1 class="hero-title">Culinary Artistry <span>Redefined</span></h1>
+            <p class="hero-description">Experience premium fine dining in a luxurious atmosphere where classic heritage
+                meets modern avant-garde gastronomy.</p>
+            <div class="hero-buttons">
+                <a href="#reservation" class="btn btn-primary">Reserve A Table</a>
+                <a href="#menu" class="btn btn-outline">Explore Our Menu</a>
+            </div>
+        </div>
+        <div class="hero-scroll-btn" id="scroll-to-about">
+            <span>Scroll</span>
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content" id="about-content">
+                    <span class="section-subtitle">Our Heritage</span>
+                    <h2 class="about-title">A Tradition of Gastronomy</h2>
+                    <p class="about-desc-highlight">“We do not simply cook; we curate memories on a canvas of fine taste
+                        and timeless elegance.”</p>
+                    <p class="about-desc">Established in the heart of the culinary district, Urban Spice brings a
+                        meticulous curation of fine dining. We blend rare spices, artisanal locally-sourced ingredients,
+                        and modern gastronomy techniques to create plates that are visual masterpieces and sensory
+                        revelations.</p>
+
+                    <div class="about-features">
+                        <div class="about-feature-item">
+                            <div class="about-feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                                </svg>
+                            </div>
+                            <div class="about-feature-text">
+                                <h4>Michelin Artistry</h4>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <div class="about-feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 8v4l3 3" />
+                                </svg>
+                            </div>
+                            <div class="about-feature-text">
+                                <h4>Exclusive Ambiance</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#menu" class="btn btn-outline">View Our Story</a>
+                </div>
+
+                <div class="about-images" id="about-images">
+                    <div class="about-img-box about-img-1">
+                        <img src="assets/dish-signature.png" alt="Signature wagyu steak plate">
+                    </div>
+                    <div class="about-img-box about-img-2">
+                        <img src="assets/ambiance-wine.png" alt="Luxury wine cabinet setting">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Exquisite Taste</span>
+                <h2 class="section-title">The Culinary Selection</h2>
+            </div>
+
+            <!-- Menu Category Filter Tabs -->
+            <div class="menu-tabs">
+                <button class="menu-tab-btn active" data-filter="all">All Dishes</button>
+                <button class="menu-tab-btn" data-filter="starters">Starters</button>
+                <button class="menu-tab-btn" data-filter="mains">Mains</button>
+                <button class="menu-tab-btn" data-filter="desserts">Desserts</button>
+                <button class="menu-tab-btn" data-filter="drinks">Signatures</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menu-grid">
+
+                <!-- Starters -->
+                <div class="menu-item" data-category="starters">
+                    <div class="menu-item-img">
+                        <img src="assets/dish-signature.png" alt="Truffle Mushroom Soup">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-head">
+                            <h3 class="menu-item-name">Truffle Wild Mushroom Velouté</h3>
+                            <span class="menu-item-price">$24</span>
+                        </div>
+                        <p class="menu-item-desc">Slow-simmered forest mushrooms, white truffle oil, edible gold dust
+                            accents.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Vegan</span>
+                            <span class="menu-tag">Gluten-Free</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="starters">
+                    <div class="menu-item-img">
+                        <img src="assets/dish-signature.png" alt="Pan-Seared Scallops">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-head">
+                            <h3 class="menu-item-name">Pan-Seared U10 Scallops</h3>
+                            <span class="menu-item-price">$29</span>
+                        </div>
+                        <p class="menu-item-desc">Sunchoke purée, crispy heritage bacon lardons, gold-leaf garnish.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag chef-spec">Chef's Special</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="starters">
+                    <div class="menu-item-img">
+                        <img src="assets/dish-signature.png" alt="Heritage Beetroot Tartare">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-head">
+                            <h3 class="menu-item-name">Heritage Beetroot Tartare</h3>
+                            <span class="menu-item-price">$22</span>
+                        </div>
+                        <p class="menu-item-desc">Whipped artisanal goat cheese emulsion, toasted pine nuts, fresh
+                            micro-basil.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Vegetarian</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mains -->
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-img">
+                        <img src="assets/dish-signature.png" alt="Olive-Fed Wagyu Steak">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-head">
+                            <h3 class="menu-item-name">Olive-Fed Wagyu Ribeye</h3>
+                            <span class="menu-item-price">$95</span>
+                        </div>
+                        <p class="menu-item-desc">A5 Japanese Wagyu, bone marrow butter, gold leaf flakes, caramelized
+                            heirloom shallots.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag chef-spec">Chef's Special</span>
+                            <span class="menu-tag">Gluten-Free</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-img">
+                        <img src="assets/dish-signature.png" alt="Butter Poached Lobster">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-head">
+                            <h3 class="menu-item-name">Butter Poached Lobster Tail</h3>
+                            <span class="menu-item-price">$68</span>
+                        </div>
+                        <p class="menu-item-desc">Saffron risotto, sea beans, preserved organic lemons, delicate
+                            culinary foam.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Signature</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-img">
+                        <img src="assets/dish-signature.png" alt="Roasted Duck Breast">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-head">
+                            <h3 class="menu-item-name">Roast Duck Breast</h3>
+                            <span class="menu-item-price">$52</span>
+                        </div>
+                        <p class="menu-item-desc">Spiced dark cherry reduction, parsnip mousse, buttered chanterelle
+                            mushrooms.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Gluten-Free</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-img">
+                        <img src="assets/dish-dessert.png" alt="Golden Chocolate Sphere">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-head">
+                            <h3 class="menu-item-name">Golden Chocolate Sphere</h3>
+                            <span class="menu-item-price">$22</span>
+                        </div>
+                        <p class="menu-item-desc">Dark chocolate shell, warm salted caramel pour-over, Madagascan
+                            vanilla bean core.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag chef-spec">Chef's Special</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-img">
+                        <img src="assets/dish-dessert.png" alt="Lemon Tart">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-head">
+                            <h3 class="menu-item-name">Deconstructed Meyer Lemon Tart</h3>
+                            <span class="menu-item-price">$18</span>
+                        </div>
+                        <p class="menu-item-desc">Yuzu curd, lightly toasted meringue, gold-leaf sugar shards,
+                            shortbread crumbles.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Vegetarian</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Signature Drinks -->
+                <div class="menu-item" data-category="drinks">
+                    <div class="menu-item-img">
+                        <img src="assets/ambiance-wine.png" alt="The Urban Gilded Cocktail">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-head">
+                            <h3 class="menu-item-name">The Urban Gilded</h3>
+                            <span class="menu-item-price">$28</span>
+                        </div>
+                        <p class="menu-item-desc">Aged bourbon, saffron syrup, aromatic bitters, gold leaf flake,
+                            cherry-wood smoke infusion.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag chef-spec">Chef's Special</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="drinks">
+                    <div class="menu-item-img">
+                        <img src="assets/ambiance-wine.png" alt="Royal Lavender 75">
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-head">
+                            <h3 class="menu-item-name">Royal Lavender 75</h3>
+                            <span class="menu-item-price">$24</span>
+                        </div>
+                        <p class="menu-item-desc">Artisanal gin, fresh organic lavender syrup, lemon juice, Dom Pérignon
+                            float.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Signature</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef Profile Section -->
+    <section class="chef" id="chef">
+        <div class="container">
+            <div class="chef-grid">
+                <div class="chef-image" id="chef-image">
+                    <div class="chef-image-container">
+                        <img src="assets/chef-marcus.png" alt="Executive Chef Marcus Vance portrait">
+                    </div>
+                    <div class="chef-signature-overlay">
+                        <h4>Executive Chef</h4>
+                        <p>Marcus Vance</p>
+                    </div>
+                </div>
+
+                <div class="chef-content" id="chef-content">
+                    <span class="chef-subtitle">Meet the Culinary Master</span>
+                    <h2 class="chef-title">Crafting the Avant-Garde</h2>
+                    <p class="chef-quote">“Gastronomy is a multi-sensory journey. Each plate we design tells a story of
+                        respect for the ingredient and courage in pairings.”</p>
+                    <p class="chef-bio">Executive Chef Marcus Vance has spent over two decades crafting fine dining
+                        experiences across Michelin-starred kitchens in Paris, Tokyo, and London. Guided by a philosophy
+                        that visual harmony is just as vital as flavor depth, Marcus treats the kitchen as a studio and
+                        every ingredient as a brushstroke of culinary art.</p>
+
+                    <div class="chef-accolades">
+                        <div class="chef-accolade-item">
+                            <div class="chef-accolade-number">2</div>
+                            <div class="chef-accolade-text">Michelin Stars</div>
+                        </div>
+                        <div class="chef-accolade-item">
+                            <div class="chef-accolade-number">20+</div>
+                            <div class="chef-accolade-text">Years Mastered</div>
+                        </div>
+                        <div class="chef-accolade-item">
+                            <div class="chef-accolade-number">15</div>
+                            <div class="chef-accolade-text">Signature Plates</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Visual Splendor</span>
+                <h2 class="section-title">The Ambiance & Platings</h2>
+            </div>
+
+            <div class="gallery-grid" id="gallery-grid">
+
+                <div class="gallery-item" data-src="assets/hero-bg.png" data-caption="Main Candlelit Dining Hall">
+                    <img src="assets/hero-bg.png" alt="Main Dining Hall Interior">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </div>
+                        <h3 class="gallery-overlay-title">Main Hall</h3>
+                        <p class="gallery-overlay-cat">Ambiance</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-src="assets/dish-signature.png"
+                    data-caption="Olive-Fed Wagyu Ribeye Signature Plating">
+                    <img src="assets/dish-signature.png" alt="Wagyu Ribeye Steak Plated">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </div>
+                        <h3 class="gallery-overlay-title">Signature Wagyu</h3>
+                        <p class="gallery-overlay-cat">Gastronomy</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-src="assets/chef-marcus.png"
+                    data-caption="Chef Marcus Vance Culinary Studio">
+                    <img src="assets/chef-marcus.png" alt="Chef Marcus Vance portrait in kitchen">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </div>
+                        <h3 class="gallery-overlay-title">Culinary Prep</h3>
+                        <p class="gallery-overlay-cat">The Team</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-src="assets/dish-dessert.png"
+                    data-caption="Golden Chocolate Sphere Dessert">
+                    <img src="assets/dish-dessert.png" alt="Golden Chocolate Sphere plated">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </div>
+                        <h3 class="gallery-overlay-title">Dessert Art</h3>
+                        <p class="gallery-overlay-cat">Gastronomy</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-src="assets/ambiance-wine.png"
+                    data-caption="Curated Sommelier Wine Cellar Room">
+                    <img src="assets/ambiance-wine.png" alt="Premium Wine Rack room backlighting">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </div>
+                        <h3 class="gallery-overlay-title">Sommelier Vault</h3>
+                        <p class="gallery-overlay-cat">Ambiance</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-src="assets/hero-bg.png" data-caption="Exclusive Chef's Table Set Up">
+                    <img src="assets/hero-bg.png" alt="Exclusive Table setting candlelit">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </div>
+                        <h3 class="gallery-overlay-title">Chef's Table</h3>
+                        <p class="gallery-overlay-cat">Ambiance</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" id="lightbox-close">&times;</span>
+            <img src="" alt="" class="lightbox-img" id="lightbox-img">
+            <div class="lightbox-caption" id="lightbox-caption">Caption text</div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Gastronomic Acclaim</span>
+                <h2 class="section-title">Reviews & Impressions</h2>
+            </div>
+
+            <div class="testimonials-slider">
+                <div class="testimonials-wrapper" id="testimonials-wrapper">
+
+                    <!-- Review 1 -->
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">“An absolute triumph of culinary design. The Wagyu Ribeye
+                            is a masterpiece of texture and balance. Urban Spice sets a new benchmark for premium fine
+                            dining in the metropolitan area.”</blockquote>
+                        <div class="testimonial-author">
+                            <h4 class="testimonial-author-name">Charles Sterling</h4>
+                            <p class="testimonial-author-title">Michelin Guide Inspector</p>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">“From the moment you cross the threshold, you are
+                            enveloped in an atmosphere of pure gold and shadow. The service is balletic, and the vintage
+                            wine pairings are meticulously curated.”</blockquote>
+                        <div class="testimonial-author">
+                            <h4 class="testimonial-author-name">Lady Elizabeth Pemberton</h4>
+                            <p class="testimonial-author-title">The London Tatler</p>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote class="testimonial-quote">“Chef Marcus Vance's respect for simple ingredients paired
+                            with daring modern gastronomical chemistry creates a temple of taste. Exceptional and
+                            profoundly elegant.”</blockquote>
+                        <div class="testimonial-author">
+                            <h4 class="testimonial-author-name">Chef Jean-Luc Moreau</h4>
+                            <p class="testimonial-author-title">Acclaimed Culinary Critic</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Slide Navigation Dots -->
+                <div class="testimonials-dots" id="testimonials-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Reservation Section -->
+    <section class="reservation" id="reservation">
+        <div class="container">
+            <div class="reservation-container" id="reservation-container">
+                <div class="section-header" style="margin-bottom: 2rem;">
+                    <span class="section-subtitle">Reserve a Table</span>
+                    <h2 class="section-title">Online Booking</h2>
+                </div>
+                <p class="reservation-desc">Reserve your dining experience at Urban Spice. For parties larger than 8, or
+                    for exclusive private hire of the Main Vault room, please contact our hosting desk directly.</p>
+
+                <form class="reservation-form" id="booking-form" novalidate>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Marcus Vance" required>
+                        <span class="form-error-msg">Please enter your name</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="name@luxury.com" required>
+                        <span class="form-error-msg">Please enter a valid email address</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="+44 20 7946 0958" required>
+                        <span class="form-error-msg">Please enter your phone number</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guests" class="form-label">Number of Guests</label>
+                        <select id="guests" class="form-control" required>
+                            <option value="" disabled selected>Select guest count</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6">6 Guests</option>
+                            <option value="7">7 Guests</option>
+                            <option value="8">8 Guests (Large Group)</option>
+                        </select>
+                        <span class="form-error-msg">Please select number of guests</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date" class="form-label">Date</label>
+                        <input type="date" id="date" class="form-control" required>
+                        <span class="form-error-msg">Please pick a date in the future</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time" class="form-label">Time</label>
+                        <select id="time" class="form-control" required>
+                            <option value="" disabled selected>Select time slot</option>
+                            <option value="17:00">5:00 PM</option>
+                            <option value="17:30">5:30 PM</option>
+                            <option value="18:00">6:00 PM</option>
+                            <option value="18:30">6:30 PM</option>
+                            <option value="19:00">7:00 PM</option>
+                            <option value="19:30">7:30 PM</option>
+                            <option value="20:00">8:00 PM</option>
+                            <option value="20:30">8:30 PM</option>
+                            <option value="21:00">9:00 PM</option>
+                            <option value="21:30">9:30 PM</option>
+                            <option value="22:00">10:00 PM</option>
+                        </select>
+                        <span class="form-error-msg">Please choose a dining session time</span>
+                    </div>
+
+                    <div class="form-group form-group-full">
+                        <label for="seating" class="form-label">Seating Preference</label>
+                        <select id="seating" class="form-control">
+                            <option value="Main Dining Hall" selected>Main Dining Hall (Elegant candlelight)</option>
+                            <option value="Terrace Room">Glass Terrace (Scenic skyline views)</option>
+                            <option value="Chef's Table">Chef's Table (Front-row view of the culinary action)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group form-group-full">
+                        <label for="requests" class="form-label">Special Requests / Allergies</label>
+                        <textarea id="requests" class="form-control form-control-textarea"
+                            placeholder="Dietary restrictions, allergies, or celebratory notes (e.g. Anniversary)..."></textarea>
+                    </div>
+
+                    <div class="reservation-submit">
+                        <button type="submit" class="btn btn-primary">Submit Booking</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div class="success-modal" id="success-modal">
+        <div class="success-card">
+            <div class="success-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                    <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+            </div>
+            <h3 class="success-title">Reservation Requested</h3>
+            <p class="success-msg">Your table request has been received. Our Maître D' will review the slot and confirm
+                via email within 15 minutes.</p>
+
+            <div class="success-details">
+                <div class="success-details-row">
+                    <span class="success-details-label">Guest</span>
+                    <span class="success-details-val" id="summary-name">-</span>
+                </div>
+                <div class="success-details-row">
+                    <span class="success-details-label">Size</span>
+                    <span class="success-details-val" id="summary-guests">-</span>
+                </div>
+                <div class="success-details-row">
+                    <span class="success-details-label">Date & Time</span>
+                    <span class="success-details-val" id="summary-datetime">-</span>
+                </div>
+                <div class="success-details-row">
+                    <span class="success-details-label">Seating</span>
+                    <span class="success-details-val" id="summary-seating">-</span>
+                </div>
+            </div>
+
+            <button class="btn btn-outline" id="close-success-btn">Return to Website</button>
+        </div>
+    </div>
+
+    <!-- Contact & Map Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+
+                <div class="contact-info" id="contact-info">
+                    <span class="section-subtitle">Find Us</span>
+                    <h2 class="contact-title">Location & Contact</h2>
+                    <p class="contact-desc">We are nestled in the upscale cultural quarter. Valet parking service is
+                        available right at the entrance lobby.</p>
+
+                    <div class="contact-details">
+                        <!-- Address -->
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4 class="contact-item-title">Our Location</h4>
+                                <p class="contact-item-val">147 Golden Gates Boulevard, London, W1B 4DA</p>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4 class="contact-item-title">Hosting Desk</h4>
+                                <p class="contact-item-val"><a href="tel:+442079460958">+44 20 7946 0958</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4 class="contact-item-title">Hosting Email</h4>
+                                <p class="contact-item-val"><a
+                                        href="mailto:reservations@urbanspice.com">reservations@urbanspice.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="contact-socials">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook link" class="social-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram link" class="social-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter link" class="social-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Custom dark map styling container -->
+                <div class="contact-map-container" id="contact-map-container">
+                    <!-- Embedded Google Maps with custom inline parameters -->
+                    <iframe class="contact-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.9056586071427!2d-0.13840742337770857!3d51.5149363718151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d49fb6b775%3A0x6bcfd30c5e317b3d!2sGolden%20Square!5e0!3m2!1sen!2suk!4v1721016843477!5m2!1sen!2suk"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        aria-label="Restaurant location map"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <!-- Brand Info -->
+                <div class="footer-col-brand">
+                    <h3>URBAN <span>SPICE</span></h3>
+                    <p class="footer-desc">Crafting elevated dining moments. We invite you to lose yourself in an
+                        exquisite sensory experience in the heart of London.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Our Menu</a></li>
+                        <li><a href="#chef">Chef Profile</a></li>
+                    </ul>
+                </div>
+
+                <!-- Hours -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Dining Hours</h4>
+                    <ul class="footer-hours-list">
+                        <li><span class="footer-hours-day">Mon - Thu</span> 5 PM - 11 PM</li>
+                        <li><span class="footer-hours-day">Fri - Sat</span> 5 PM - Midnight</li>
+                        <li><span class="footer-hours-day">Sunday</span> 12 PM - 10 PM</li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-col-newsletter">
+                    <h4 class="footer-col-title">Newsletter</h4>
+                    <p>Subscribe to receive invitations to exclusive chef tasting dinners and seasonal menu debuts.</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" aria-label="Newsletter email address"
+                            required>
+                        <button type="submit" class="newsletter-btn" aria-label="Subscribe to newsletter button">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13" />
+                                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Urban Spice Restaurant. All Rights Reserved. Designed for premium gastronomy.</p>
+                <div class="footer-bottom-links">
+                    <a href="#home">Privacy Policy</a>
+                    <a href="#home">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+
+</html>
